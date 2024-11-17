@@ -1,0 +1,36 @@
+pipeline {
+    agent any
+
+    environment {
+        GITHUB_CREDENTIALS = credentials('github-credentials')
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout([$class: 'GitSCM', 
+                          branches: [[name: '*/dev']], 
+                          userRemoteConfigs: [[url: 'https://github.com/chuongdinh2k/simple-fullstack-web', 
+                                               credentialsId: 'github-credentials']]])
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Building...'
+                // Add your build steps here
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing...'
+                // Add your test steps here
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying...'
+                // Add your deploy steps here
+            }
+        }
+    }
+}
