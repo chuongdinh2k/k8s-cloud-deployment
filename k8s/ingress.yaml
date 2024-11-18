@@ -11,7 +11,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: chuongdinh.study
+    - host: k8s-threetie-mainlb-1dd958d0ec-294164495.ap-southeast-1.elb.amazonaws.com
       http:
         paths:
           - path: /api
