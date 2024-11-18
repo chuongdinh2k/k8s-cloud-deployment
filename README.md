@@ -1,21 +1,6 @@
-simple-fullstack-web/
-├── backend/
-│ ├── src/
-│ ├── tests/
-│ ├── Dockerfile
-│ └── package.json
-├── frontend/
-│ ├── src/
-│ ├── public/
-│ ├── Dockerfile
-│ └── package.json
-├── k8s/
-│ ├── deployment.yaml
-│ ├── service.yaml
-│ └── ingress.yaml
-├── .gitignore
-├── README.md
-└── Jenkinsfile
+# Design flow
+
+![alt text](<Screen Shot 2024-11-18 at 16.00.47.png>)
 
 # simple-fullstack-web
 
