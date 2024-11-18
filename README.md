@@ -1,6 +1,6 @@
 # Design flow
 
-![alt text](<Screen Shot 2024-11-18 at 16.00.47.png>)
+![alt text](<Screen Shot 2024-11-18 at 16.05.59.png>)
 
 # simple-fullstack-web
 
