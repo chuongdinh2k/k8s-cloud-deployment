@@ -2,7 +2,7 @@
 
 ![alt text](<Screen Shot 2024-11-18 at 16.05.59.png>)
 
-# simple-fullstack-web
+# Deploy three-tier application using AWS ECR, Jenkins and Kubernetes
 
 ## Overview
 
@@ -36,20 +36,6 @@ This directory contains the Kubernetes manifests for deploying the application.
 - `service.yaml`: Kubernetes Service manifest for exposing the backend and frontend services.
 - `ingress.yaml`: Kubernetes Ingress manifest for routing external traffic to the services.
 
-### `.gitignore`
-
-Specifies the files and directories to be ignored by Git.
-
-### `README.md`
-
-This file. Provides an overview of the project and explains the folder structure.
-
-### `Jenkinsfile`
-
-Contains the Jenkins pipeline configuration for continuous integration and deployment.
-
-## Getting Started
-
 ### Prerequisites
 
 - Docker
@@ -57,3 +43,8 @@ Contains the Jenkins pipeline configuration for continuous integration and deplo
 - kubectl
 - eksctl (if using AWS EKS)
 - Jenkins (for CI/CD)
+- ArgoCD (for managing Kubernetes applications)
+
+## ArgoCD gitOps
+
+![alt text](argoCD.png)
